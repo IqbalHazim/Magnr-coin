@@ -43,7 +43,7 @@ def cointodb(message):
     time = int(dp.parse(obj['time']).timestamp())
     obj['time'] = time
     par = list(obj.values())
-    print(par)
+
     
     cur.execute(stmt, par)
     conn.commit()
